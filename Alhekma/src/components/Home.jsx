@@ -1,18 +1,21 @@
 import React from 'react'
-import Coming from '../assets/images/Coming.png'
+import backgroundImg from '../assets/images/reserve.png'
 
 const Home = () => {
   return (
     <>
+
+
+    <img src={backgroundImg} alt='backgroundImg' 
+        className='opacity-[70%] h-[600px] mt-2 relative'
+    />
+
+    <div className='content'>
+        <h1 className='absolute text-8xl font-serif text-[#073F22]  font-extrabold top-[30%] left-[20%]'>Advanced CTScan</h1>
+        <a className=' absolute top-[50%] left-[30%] bg-[#073F22] py-6 px-8  text-white rounded-2xl font-mono font-bold text-2xl hover:bg-white hover:text-[#073F22] ' href=''>Schedule Appointment</a>
       
-    
-    <div className='parent w-full h-full '>
-        <img className='lg:w-full w-[400px] lg:h-full h-[400px] absolute object-cover' src={Coming} alt='Coming Soon'/>
-        <div className='w-full h-full  bg-black/80 absolute top-0 '></div>
-        <h1 className='z-10 md:text-[5rem] text-3xl text-gray-300 absolute top-[34.9%] left-[30%]'>Coming Soon</h1>
     </div>
     
-
     </>
   )
 }
