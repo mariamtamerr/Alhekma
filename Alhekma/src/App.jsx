@@ -7,8 +7,8 @@ import Cards from './components/Cards'
 // import Coming from './components/Coming'
 import Home from './components/Home'
 import Navbar from './components/NavbarItem'
-import NoTransitionExample from './components/CarouselItem'
-import Slider from './components/Slider'
+import CarouselItem from './components/CarouselItem'
+import  Welcome from './components/Welcome'
 import { useEffect } from 'react'
 import Cardies from './components/Cardies'
 import Footer from './components/Footer';
@@ -29,8 +29,8 @@ function App() {
     <>
       {/* <Coming/> */}
       <NavbarItem/>
-    <NoTransitionExample/>
-      <Slider/>
+    <CarouselItem/>
+      <Welcome/>
       <Cardies/>
       <Footer/>
      
