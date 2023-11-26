@@ -12,7 +12,7 @@ function CarouselItem() {
   return (
 
     <>
-    <Carousel slide={false} className='mt-1'>
+    <Carousel slide={false} className='mt-1' >
       <Carousel.Item interval={1000}>
         <img src={s1} className='h-[600px] w-full ' text="First slide" />
         <Carousel.Caption>
@@ -42,8 +42,8 @@ function CarouselItem() {
 
 {/* ----------- CARDS -------------------------- */}
 
-<div className='d-flex justify-center gap-10 p-5' style={{backgroundColor:"#073F22", color:"white" }}>
-  <div className='text-center p-4 box' style={{boxShadow:"0 0 3px 3px",  height:"280px", width:"382px"}}>
+<div className='d-flex justify-center gap-10 w-full p-5   ' style={{backgroundColor:"#073F22", color:"white" }}>
+  <div className='text-center p-4 box' style={{boxShadow:"0 0 3px 3px",  height:"280px", width:"382px", backgroundColor:"#073F22"}}>
     <h1 className='text-5xl mb-3 '>
     <FontAwesomeIcon icon={faUserDoctor}  />
     </h1>
@@ -53,7 +53,7 @@ function CarouselItem() {
     <a className='btn btn-dark py-3 px-4' href="">Find A Doctor</a>
   </div>
 
-  <div className='text-center p-4 box' style={{boxShadow:"0 0 3px 3px", height:"280px", width:"382px"}}>
+  <div className='text-center p-4 box' style={{boxShadow:"0 0 3px 3px #073F22", height:"280px", width:"382px", backgroundColor:"white", color:"#073F22"}}>
     <h1 className='text-5xl mb-3 '>
     <FontAwesomeIcon icon={faHouseMedical} />
     </h1>
@@ -62,7 +62,7 @@ function CarouselItem() {
     <a className='btn btn-dark py-3 px-4' href="">View Facilities</a>
   </div>
 
-  <div className='text-center p-4 box' style={{boxShadow:"0 0 3px 3px", height:"280px", width:"382px"}}>
+  <div className='text-center p-4 box' style={{boxShadow:"0 0 3px 3px", height:"280px", width:"382px", backgroundColor:"#073F22", }}>
     <h1 className='text-5xl mb-3 '>
     <FontAwesomeIcon icon={faHandshakeAngle} />
     </h1>

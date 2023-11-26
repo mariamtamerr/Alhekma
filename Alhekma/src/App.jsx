@@ -13,6 +13,7 @@ import { useEffect } from 'react'
 import Cardies from './components/Cardies'
 import Footer from './components/Footer';
 import NavbarItem from './components/NavbarItem';
+import Partners from './components/Partners';
 
 
 
@@ -29,10 +30,11 @@ function App() {
     <>
       {/* <Coming/> */}
       <NavbarItem/>
-    <CarouselItem/>
-      <Welcome/>
-      <Cardies/>
+      <CarouselItem/>
+      <Welcome/>  
+      <Partners/>
       <Footer/>
+     
      
     </>
   )
