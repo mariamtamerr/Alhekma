@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import navbarImg from '../assets/images/navbar.png'
 import './NavbarItem.css'
+import { Link } from 'react-router-dom';
 
 
 const NavbarItem = () => {
@@ -91,7 +92,7 @@ const [showBabyDropDown4, setShowBabyDropDown4] = useState();
       <Navbar expand="lg" className="bg-body-tertiar ">
       <Container className="bg-white">
         <Navbar.Brand href="#home">
-          <img src={navbarImg} className='mr-10' alt="Alhekma" width="25" height="25"/>
+          <img src={navbarImg} className='mr-[5dvw] mb-1' alt="Alhekma" width="35" height="35"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -99,6 +100,10 @@ const [showBabyDropDown4, setShowBabyDropDown4] = useState();
             
 
 {/* first drop down : ABOUT US  */}
+
+
+
+        
             <NavDropdown  
                 onMouseOver={mouseOverToggle1} 
                 onMouseOut={mouseOutToggle1}
@@ -107,6 +112,7 @@ const [showBabyDropDown4, setShowBabyDropDown4] = useState();
                 show={showBabyDropDown1}
                 onMouseLeave={()=> setShowBabyDropDown1(false)}
                 >
+       
 
               <NavDropdown.Item  className='p-3  text-center' href="#action/3.1">History</NavDropdown.Item>
               <NavDropdown.Item  className='p-3 text-center' href="#action/3.2">
@@ -121,6 +127,8 @@ const [showBabyDropDown4, setShowBabyDropDown4] = useState();
                 Contact Us
               </NavDropdown.Item>
             </NavDropdown>
+
+           
 {/* second dropdown  : DEPARTMENTS */}
             <NavDropdown
                 className='mr-[50px] custom-dropdown' title="Departments" 

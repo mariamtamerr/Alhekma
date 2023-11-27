@@ -14,6 +14,8 @@ import Cardies from './components/Cardies'
 import Footer from './components/Footer';
 import NavbarItem from './components/NavbarItem';
 import Partners from './components/Partners';
+import { BrowserRouter } from 'react-router-dom';
+import Router from './router/Router';
 
 
 
@@ -29,13 +31,21 @@ function App() {
   return (
     <>
       {/* <Coming/> */}
-      <NavbarItem/>
+     {/* <NavbarItem/>
       <CarouselItem/>
       <Welcome/>  
-      <Partners/>
+      <Partners/> */}
+ 
+ 
+      <NavbarItem/>
+      <BrowserRouter basename="/Alhekma">
+        <Router /> 
+      </BrowserRouter>
       <Footer/>
-     
-     
+
+
+
+    
     </>
   )
 }

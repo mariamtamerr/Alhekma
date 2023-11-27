@@ -17,12 +17,12 @@ const Footer = () => {
 <br/>
 <br/>
 
-     <div className='d-flex justify-center w-full gap-48 bg-black text-white p-8'>
+     <div className='d-flex justify-center w-full gap-48 bg-black text-white p-8 '>
 
 
      {/* ------------ first column ------------------ */}
       <div>
-        <div className='content d-flex justify-between gap-6'>
+        <div className='content d-flex justify-between gap-6 '>
            <img src={navbarImg} alt='logo' width='50' className='rounded-[80%]' /> 
            <h1 className='text-3xl mt-2'>Alhekma</h1>
         </div> <br/>
@@ -42,7 +42,7 @@ const Footer = () => {
 {/* -------------- second column ----------------- */}
 
       <div>
-        <h1 className='text-3xl'>Departments % Facilities </h1>
+        <h1 className='text-3xl'>Departments & Facilities </h1>
         <div className='content d-flex flex-column mt-4'>
           <a href='' className='text-gray-500 cursor-pointer mb-2 hover:text-white'>Surgery</a>
           <a href='' className='text-gray-500 cursor-pointer mb-2 hover:text-white'>Stroke Unit</a>

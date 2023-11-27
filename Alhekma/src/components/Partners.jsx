@@ -28,7 +28,7 @@ const Partners = () => {
  {/* -------- Government Partners -------- */}
  <h1 className='text-5xl text-center'>Government Partners</h1> <br/>
    <CardGroup >
-      <Card className='mr-5' style={{boxShadow:"0 0 3px 1px"}}>
+      <Card className='mr-5' >
         <Card.Img variant="top" src={g1} />
         <Card.Body>
           <Card.Title className='text-center btn btn-dark w-full h-full text-white p-3'>SCP</Card.Title>
@@ -36,14 +36,14 @@ const Partners = () => {
       </Card>
 
 
-      <Card  className='mr-5' style={{boxShadow:"0 0 3px 1px"}}>
+      <Card  className='mr-5' >
         <Card.Img variant="top" src={g2} />
         <Card.Body>
           <Card.Title className='text-center btn btn-dark w-full h-full text-white p-3'>Engineers Syndicate</Card.Title>
         </Card.Body>
       </Card>
 
-      <Card  className='' style={{boxShadow:"0 0 3px 1px"}}>
+      <Card  className='' >
         <Card.Img variant="top" src={g3} />
         <Card.Body>
           <Card.Title className='text-center btn btn-dark w-full h-full text-white p-3 '>HIMU</Card.Title>
