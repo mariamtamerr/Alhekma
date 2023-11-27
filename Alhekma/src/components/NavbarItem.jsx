@@ -102,7 +102,7 @@ const [showBabyDropDown4, setShowBabyDropDown4] = useState();
             <NavDropdown  
                 onMouseOver={mouseOverToggle1} 
                 onMouseOut={mouseOutToggle1}
-                className='mr-5' title="About Us" 
+                className='mr-[50px] custom-dropdown' title="About Us" 
                 id="basic-nav-dropdown"
                 show={showBabyDropDown1}
                 onMouseLeave={()=> setShowBabyDropDown1(false)}
@@ -123,7 +123,7 @@ const [showBabyDropDown4, setShowBabyDropDown4] = useState();
             </NavDropdown>
 {/* second dropdown  : DEPARTMENTS */}
             <NavDropdown
-                className='mr-5' title="Departments" 
+                className='mr-[50px] custom-dropdown' title="Departments" 
                 onMouseOver={mouseOverToggle2} 
                 onMouseOut={mouseOutToggle2}
                 id="basic-nav-dropdown"
@@ -150,7 +150,7 @@ const [showBabyDropDown4, setShowBabyDropDown4] = useState();
 
 {/* third dropdown : FACILITIES  */}
             <NavDropdown 
-              className='mr-5' 
+              className='mr-[50px] custom-dropdown' 
               title="Facilities" 
               id="basic-nav-dropdown"
               onMouseOver={mouseOverToggle3} 
@@ -171,7 +171,7 @@ const [showBabyDropDown4, setShowBabyDropDown4] = useState();
 
             {/* fourth dropdown  : PATIENT CARE */}
             <NavDropdown 
-              className='mr-5'
+              className='mr-[50px] custom-dropdown'
               title="Patient Care"
               onMouseOver={mouseOverToggle4} 
               onMouseOut={mouseOutToggle4}

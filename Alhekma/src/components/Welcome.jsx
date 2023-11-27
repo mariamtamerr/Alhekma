@@ -1,6 +1,8 @@
 // src/Slider.js
 import React from 'react';
 import dr from '../assets/images/dr.jpg'
+import hospital2 from '../assets/images/hospital2.jpeg'
+import hospital3 from '../assets/images/hospital3.jpeg'
 
 
 function Welcome() {
@@ -11,7 +13,11 @@ function Welcome() {
     <div className="slider-container flex justify-center gap-48 ">
       
       <div>
-        <img src={dr} height='50' width='300'/>
+      <br/>
+      
+      
+      <br/>
+        <img src={hospital2} height='100' width='500'/>
       </div>
 
       <div className='right  text-center ml-10 w-[600px] mt-10'>
@@ -41,7 +47,11 @@ function Welcome() {
     <div className="slider-container flex  justify-center  text-center gap-48">
       
       <div>
-        <img src={dr} height='50' width='300'/>
+     
+    
+      <br/>
+      <br/>
+        <img src={hospital3}  height='100' width='500'/>
       </div>
 
       <div className='right ml-10 w-[600px] mt-10'>

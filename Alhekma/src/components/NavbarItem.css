@@ -26,3 +26,13 @@ span.carousel-control-prev-icon:hover,
 span.carousel-control-next-icon:hover {
   transform: scale(2) !important;
 }
+
+a.nav-link {
+    font-size: 1.1rem !important;
+}
+
+
+.custom-dropdown .dropdown-menu {
+    min-width: 200px; /* Set the minimum width for the dropdown menu */
+    /* Other styling properties */
+  }
