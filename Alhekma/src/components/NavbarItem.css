@@ -1,0 +1,28 @@
+/* div.mr-5.nav-item.show.dropdown:hover {
+    color: red !important; 
+}
+
+a#basic-nav-dropdown.dropdown-toggle.show.nav-link:hover {
+    color : red !important; 
+} */
+
+a.p-3.text-center.dropdown-item:hover {
+  background-color: #073f22;
+  color: white;
+}
+
+a.nav-link:hover {
+  /* color: #073F22;  */
+  color: green;
+}
+
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon {
+  /* transition: 0.3 transform ease ; */
+  transition: transform 0s ease !important;
+}
+
+span.carousel-control-prev-icon:hover,
+span.carousel-control-next-icon:hover {
+  transform: scale(2) !important;
+}

@@ -1,12 +1,85 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import navbarImg from '../assets/images/navbar.png'
+import './NavbarItem.css'
 
 
 const NavbarItem = () => {
+
+
+const [showBabyDropDown1, setShowBabyDropDown1] = useState();
+const [showBabyDropDown2, setShowBabyDropDown2] = useState();
+const [showBabyDropDown3, setShowBabyDropDown3] = useState();
+const [showBabyDropDown4, setShowBabyDropDown4] = useState();
+
+
+
+  const mouseOverToggle1 = (e) => {
+
+    setShowBabyDropDown1(true)
+
+  }
+
+
+  const mouseOutToggle1 = (e) => {
+        
+    setShowBabyDropDown1(false)
+    
+
+  }
+
+  // -----
+
+  const mouseOverToggle2 = (e) => {
+
+    setShowBabyDropDown2(true)
+
+  }
+
+
+  const mouseOutToggle2 = (e) => {
+        
+    setShowBabyDropDown2(false)
+    
+
+  }
+
+// -----------
+
+  const mouseOverToggle3 = (e) => {
+
+    setShowBabyDropDown3(true)
+
+  }
+
+
+  const mouseOutToggle3 = (e) => {
+        
+    setShowBabyDropDown3(false)
+    
+
+  }
+
+
+  const mouseOverToggle4 = (e) => {
+
+    setShowBabyDropDown4(true)
+
+  }
+
+
+  const mouseOutToggle4 = (e) => {
+        
+    setShowBabyDropDown4(false)
+    
+
+  }
+
+
+
   return (
     <>
       
@@ -26,23 +99,38 @@ const NavbarItem = () => {
             
 
 {/* first drop down : ABOUT US  */}
-            <NavDropdown className='mr-5' title="About Us" id="basic-nav-dropdown">
+            <NavDropdown  
+                onMouseOver={mouseOverToggle1} 
+                onMouseOut={mouseOutToggle1}
+                className='mr-5' title="About Us" 
+                id="basic-nav-dropdown"
+                show={showBabyDropDown1}
+                onMouseLeave={()=> setShowBabyDropDown1(false)}
+                >
+
               <NavDropdown.Item  className='p-3  text-center' href="#action/3.1">History</NavDropdown.Item>
-              <NavDropdown.Item className='p-3 text-center' href="#action/3.2">
+              <NavDropdown.Item  className='p-3 text-center' href="#action/3.2">
                 Scope
               </NavDropdown.Item>
-              <NavDropdown.Item className='p-3 text-center' href="#action/3.3">Our Team</NavDropdown.Item>
+              <NavDropdown.Item  className='p-3 text-center' href="#action/3.3">Our Team</NavDropdown.Item>
               
-              <NavDropdown.Item className='p-3 text-center' href="#action/3.4">
+              <NavDropdown.Item  className='p-3 text-center' href="#action/3.4">
                 Accreditations
               </NavDropdown.Item>
-              <NavDropdown.Item className='p-3 text-center' href="#action/3.4">
+              <NavDropdown.Item  className='p-3 text-center' href="#action/3.4">
                 Contact Us
               </NavDropdown.Item>
             </NavDropdown>
 {/* second dropdown  : DEPARTMENTS */}
-            <NavDropdown className='mr-5' title="Departments" id="basic-nav-dropdown">
-              <NavDropdown.Item className='p-3  text-center' href="#action/3.1">Surgery</NavDropdown.Item>
+            <NavDropdown
+                className='mr-5' title="Departments" 
+                onMouseOver={mouseOverToggle2} 
+                onMouseOut={mouseOutToggle2}
+                id="basic-nav-dropdown"
+                show={showBabyDropDown2}
+                onMouseLeave={()=> setShowBabyDropDown2(false)}
+                > 
+                <NavDropdown.Item className='p-3  text-center' href="#action/3.1">Surgery</NavDropdown.Item>
               <NavDropdown.Item className='p-3  text-center' href="#action/3.2">
                 Stroke Unit
               </NavDropdown.Item>
@@ -61,7 +149,15 @@ const NavbarItem = () => {
             </NavDropdown>
 
 {/* third dropdown : FACILITIES  */}
-            <NavDropdown className='mr-5' title="Facilities" id="basic-nav-dropdown">
+            <NavDropdown 
+              className='mr-5' 
+              title="Facilities" 
+              id="basic-nav-dropdown"
+              onMouseOver={mouseOverToggle3} 
+              onMouseOut={mouseOutToggle3}
+              show={showBabyDropDown3}
+              onMouseLeave={()=> setShowBabyDropDown3(false)}
+                >
               <NavDropdown.Item className='p-3  text-center' href="#action/3.1">Intensive Care Unit</NavDropdown.Item>
               <NavDropdown.Item className='p-3  text-center' href="#action/3.2">
               Intermediate Care
@@ -74,7 +170,14 @@ const NavbarItem = () => {
             </NavDropdown>
 
             {/* fourth dropdown  : PATIENT CARE */}
-            <NavDropdown className='mr-5' title="Patient Care" id="basic-nav-dropdown">
+            <NavDropdown 
+              className='mr-5'
+              title="Patient Care"
+              onMouseOver={mouseOverToggle4} 
+              onMouseOut={mouseOutToggle4}
+              show={showBabyDropDown4}
+              onMouseLeave={()=> setShowBabyDropDown4(false)}
+                >
               <NavDropdown.Item className='p-3  text-center' href="#action/3.1">Admission Guide</NavDropdown.Item>
               <NavDropdown.Item className='p-3  text-center' href="#action/3.2">
               Hospitality 
